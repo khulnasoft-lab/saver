@@ -1,0 +1,5 @@
+---
+lineage:
+  skeleton:
+    remote-url: https://github.com/khulnasoft-lab/skeleton-docker.git
+version: '1'
