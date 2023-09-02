@@ -33,7 +33,7 @@ expects the secrets in a different location.
 To run the `khulnasoft-lab/saver` image via Docker:
 
 ```console
-docker run khulnasoft/saver:1.3.2
+docker run khulnasoft/saver:1.3.2+build.2
 ```
 
 ### Running with Docker Compose ###
@@ -46,7 +46,7 @@ docker run khulnasoft/saver:1.3.2
 
     services:
       saver:
-        image: khulnasoft-lab/saver:1.3.2
+        image: khulnasoft-lab/saver:1.3.2+build.2
         volumes:
           - type: bind
             source: <your_log_dir>
@@ -92,7 +92,7 @@ environment variables.  See the
 
     services:
       trustymail_reporter:
-        image: khulnasoft-lab/saver:1.3.2
+        image: khulnasoft/saver:1.3.2+build.2
         volumes:
           - type: bind
             source: <your_log_dir>
@@ -129,7 +129,7 @@ environment variables.  See the
 1. Pull the new image:
 
     ```console
-    docker pull khulnasoft-lab/saver:1.3.2
+    docker pull khulnasoft-lab/saver:1.3.2+build.2
     ```
 
 1. Recreate and run the container by following the [previous instructions](#running-with-docker).
@@ -139,11 +139,11 @@ environment variables.  See the
 The images of this container are tagged with [semantic
 versions](https://semver.org) of the underlying saver project that they
 containerize.  It is recommended that most users use a version tag (e.g.
-`:1.3.2`).
+`:1.3.2+build.2`).
 
 | Image:tag | Description |
 |-----------|-------------|
-|`khulnasoft-lab/saver:1.3.2`| An exact release version. |
+|`khulnasoft-lab/saver:1.3.2+build.2`| An exact release version. |
 |`khulnasoft-lab/saver:1.3`| The most recent release matching the major and minor version numbers. |
 |`khulnasoft-lab/saver:1`| The most recent release matching the major version number. |
 |`khulnasoft-lab/saver:edge` | The most recent image built from a merge into the `develop` branch of this repository. |
@@ -206,8 +206,8 @@ Build the image locally using this git repository as the [build context](https:/
 
 ```console
 docker build \
-  --build-arg VERSION=1.3.2 \
-  --tag khulnasoft-lab/saver:1.3.2 \
+  --build-arg VERSION=1.3.2+build.2 \
+  --tag khulnasoft-lab/saver:1.3.2+build.2 \
   https://github.com/khulnasoft-lab/saver.git#develop
 ```
 
@@ -237,9 +237,9 @@ Docker:
     docker buildx build \
       --file Dockerfile-x \
       --platform linux/amd64 \
-      --build-arg VERSION=1.3.2 \
+      --build-arg VERSION=1.3.2+build.2 \
       --output type=docker \
-      --tag khulnasoft-lab/saver:1.3.2 .
+      --tag khulnasoft-lab/saver:1.3.2+build.2 .
     ```
 
 ## Contributing ##
