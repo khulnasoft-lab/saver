@@ -6,7 +6,7 @@ FROM python:3.11.1-alpine
 #
 # Note: Additional labels are added by the build workflow.
 ###
-LABEL org.opencontainers.image.authors="vm-fusion-dev-group@khulnasoft.com"
+LABEL org.opencontainers.image.authors="info@khulnasoft.com"
 LABEL org.opencontainers.image.vendor="Cybersecurity and Infrastructure Security Agency"
 
 ###
