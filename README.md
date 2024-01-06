@@ -129,7 +129,7 @@ environment variables.  See the
 1. Pull the new image:
 
     ```console
-    docker pull khulnasoft-lab/saver:1.3.2+build.2
+    docker pull khulnasoft/saver:1.3.2+build.2
     ```
 
 1. Recreate and run the container by following the [previous instructions](#running-with-docker).
@@ -150,7 +150,7 @@ containerize.  It is recommended that most users use a version tag (e.g.
 |`khulnasoft-lab/saver:nightly` | A nightly build of the `develop` branch of this repository. |
 |`khulnasoft-lab/saver:latest`| The most recent release image pushed to a container registry.  Pulling an image using the `:latest` tag [should be avoided.](https://vsupalov.com/docker-latest-tag/) |
 
-See the [tags tab](https://hub.docker.com/r/khulnasoft-lab/saver/tags) on Docker
+See the [tags tab](https://hub.docker.com/r/khulnasoft/saver/tags) on Docker
 Hub for a list of all the supported tags.
 
 ## Volumes ##
