@@ -6,7 +6,7 @@
 
 ## Docker Image ##
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/khulnasoft-lab/saver)](https://hub.docker.com/r/khulnasoft-lab/saver)
+[![Docker Pulls](https://img.shields.io/docker/pulls/khulnasoft/saver)](https://hub.docker.com/r/khulnasoft/saver)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/khulnasoft-lab/saver)](https://hub.docker.com/r/khulnasoft-lab/saver)
 [![Platforms](https://img.shields.io/badge/platforms-amd64%20%7C%20arm%2Fv6%20%7C%20arm%2Fv7%20%7C%20arm64%20%7C%20ppc64le%20%7C%20s390x-blue)](https://hub.docker.com/r/khulnasoft-lab/saver/tags)
 
@@ -46,7 +46,7 @@ docker run khulnasoft/saver:1.3.2+build.2
 
     services:
       saver:
-        image: khulnasoft-lab/saver:1.3.2+build.2
+        image: khulnasoft/saver:1.3.2+build.2
         volumes:
           - type: bind
             source: <your_log_dir>
